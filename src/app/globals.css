@@ -1,0 +1,301 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Yagiza;
+  src: url("fonts/YAGIZA__.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: Popstar;
+  src: url("fonts/POPSTAR.TTF") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden; 
+}
+
+body {
+  color: var(--foreground);
+  background: #0a0a0a;
+  font-family: Yagiza;
+  position: relative;
+  overflow-x: hidden; 
+  height: 100%;
+}
+
+.contentContainer {
+  width: auto;
+  min-height: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  z-index: 10;
+  position: relative;
+}
+
+.contentContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 60%; 
+  min-height: 100%;
+  height: auto;
+  background-color: #0a0a0a;
+  z-index: -1; 
+  border-radius: 20px; 
+}
+
+.slidingTextBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; 
+}
+
+.slidingTextRow {
+  text-shadow: 2px 2px 5px rgb(255, 255, 255, 0.5);
+  font-size: 5rem;
+  white-space: nowrap;
+  display: flex; 
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255, 0.5);
+  animation-duration: 80s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.slidingTextRow:nth-child(odd) {
+  animation-name: slideLeftToRight;
+  justify-content: flex-end;
+}
+
+.slidingTextRow:nth-child(even) {
+  animation-name: slideRightToLeft;
+}
+
+.slidingTextRow span {
+  display: inline-block;
+  padding-right: 50px; 
+}
+
+@keyframes slideLeftToRight {
+  0% {
+    transform: translateX(-1%);
+  }
+  100% {
+    transform: translateX(100%); 
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(1%); 
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.1s linear;
+  z-index: 9999;
+}
+
+.trail {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.2s ease-out, opacity 0.5s ease-out;
+  z-index: 9998;
+}
+
+.icon {
+  width: 10rem;
+  height: 9rem;
+  margin-top: 2rem;
+}
+
+.homeNavbar {
+  width: 45%;
+  height: 3rem;
+  border: 1px solid;
+  border-color:#535353;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.navbarElement {
+  font-family: Yagiza;
+  font-size: 0.8rem;
+  width: 25%;
+  border: 1px solid;
+  border-color:#535353;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color, width 0.3s ease;
+}
+
+.navbarElement:hover {
+  background-color: #ededed;
+  color:red;
+  width: 26.5%;
+}
+
+.pageContainer {
+  width:100%;
+  padding-bottom: 1rem;
+}
+
+.grid-container {
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1rem;
+  transition: display 0.3s ease;
+}
+
+.grid-body {
+  display:flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.proprietary-container {
+  font-family: Popstar;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-height: 5rem;
+  border: 1px solid;
+  border-color: #adadad;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column; 
+  
+}
+
+.proprietary-container.header {
+  font-family: Yagiza;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  color:black;
+  background-color: beige;
+}
+
+.proprietary-container h1 {
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.proprietary-container.smallDescription h1 {
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.proprietary-container.smallDescription h1::after {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  content: "Brian Batara Yaputra";
+  position: absolute;
+  bottom: 100%;
+  left: 0%;
+  padding: 0.5rem;
+  background-color: #333;
+  color: white;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.proprietary-container h1:hover::after {
+  opacity: 1;
+}
+
+.proprietary-container h2 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.proprietary-container.header h3 {
+  font-size: 2rem;
+  position: relative;
+}
+
+.proprietary-container h4 {
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 0.8rem;
+}
+
+.proprietary-container p {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.hidden {
+  opacity: 0;
+  max-height: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  max-height: 1000px; /* A value larger than the content's height */
+  pointer-events: all;
+  transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+}
