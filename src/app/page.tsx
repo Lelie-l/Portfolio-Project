@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import HideShow from "./funcs/hideShow";
 
 export default function Home() {
