@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid-container" id="projects">
+      {/* <div className="grid-container" id="projects">
         <div className="grid-header">
           <div className="proprietary-container header">
             <h3>Projects</h3>
@@ -41,9 +41,9 @@ export default function Home() {
               <h2>This was a final year project for my highschool. I created a research paper pertaining to analyzing five popular image file formats.</h2>
             </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="grid-container" id="work">
+      {/* <div className="grid-container" id="work">
         <div className="proprietary-container header">
           <h3>Work Experience</h3>
         </div>
@@ -56,9 +56,9 @@ export default function Home() {
             <p>Worked on a website in ReactJS and NextJS.</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="grid-container" id="hobby">
+      {/* <div className="grid-container" id="hobby">
 
         <div className="grid-header">
           <div className="proprietary-container header">
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
         </div>
 
-      </div>
+      </div> */}
       
     </div>
   );

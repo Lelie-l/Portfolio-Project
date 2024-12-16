@@ -4,6 +4,7 @@ import "./globals.css"
 // import CursorCircle from "./cursorFollow";
 import HideShow from "./funcs/hideShow"
 import TextSlider from "./funcs/textSlider";
+import Link from "next/link";
 
 
 const geistSans = localFont({
@@ -40,11 +41,11 @@ export default function RootLayout({
           <div className="contentContainer">
             <img src="/icons/star-icon.svg" alt="icon" className="icon" />
               <div className="homeNavbar">
-                  <div className="navbarElement" id="allButton">All</div>
-                  <div className="navbarElement" id="aboutButton">About Me</div>
-                  <div className="navbarElement" id="projectsButton">Projects</div>
-                  <div className="navbarElement" id="workButton">Work</div>
-                  <div className="navbarElement" id="hobbyButton">Hobby</div>
+                  {/* <div className="navbarElement" id="allButton">All</div> */}
+                  <Link href="/" className="navbarElement"><div id="aboutButton">About Me</div></Link>
+                  <Link href="/projects" className="navbarElement"><div id="projectsButton">Projects</div></Link>
+                  <Link href="/work" className="navbarElement"><div id="workButton">Work</div></Link>
+                  <Link href="/hobby" className="navbarElement"><div id="hobbyButton">Hobby</div></Link>
                 </div>
               {children}
             </div>
