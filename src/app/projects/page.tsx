@@ -51,7 +51,7 @@ export default function Projects() {
                 </div>
                     <div className="proprietary-container smallDescription">
                         <h1>ORDERING SYSTEM WITH REAL-TIME PAYMENT INTEGRATION</h1>
-                        <h2>For an inter-school competition, I created an ordering system that utilizes QRIS, Indonesia's nationally standardized QR code that allows for contactless payments. <a href="/projects/orderingsystem" className="readmoreClick1">Read more</a></h2>
+                        <h2>For an inter-school competition, I created an ordering system that utilizes QRIS, Indonesia&apos;s nationally standardized QR code that allows for contactless payments. <a href="/projects/orderingsystem" className="readmoreClick1">Read more</a></h2>
                         <div className="expandContent1">
                             {/* <br></br>
                             <h2><b>Main Features:</b></h2>
@@ -83,7 +83,7 @@ export default function Projects() {
                 <div className="proprietary-container smallDescription">
                     <h1>PASSWORD ENCRYPTION USING IMAGING</h1>
                     <h2>As a project/project submission for my final year of school, I and a friend created a way to encrypt passwords using images.</h2>
-                    <h2>The program took the password and image chosen by the user, and used the image's data to encrypt the password.</h2>
+                    <h2>The program took the password and image chosen by the user, and used the image&apos;s data to encrypt the password.</h2>
                     <h2>With this, our group ended up placing third in the competition. <a href="/projects/passencryption" className="readmoreClick1">Read more</a></h2>
                 </div>
                 <div className="proprietary-container smallDescription">
