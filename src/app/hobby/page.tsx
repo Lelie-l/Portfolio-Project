@@ -24,7 +24,7 @@ export default function Hobby() {
                     <h1>Keyboards</h1>
                     <h2>This hobby was a way to bridge my love for both hobbies above into one. I created keyboards from scratch, learning how to solder resistors, capacitors, microcontrollers and SMD components like hotswap sockets alongside designing cases for them in 3D.</h2>
                 </div>
-                </div>
+            </div>
         </div>
     );
 }

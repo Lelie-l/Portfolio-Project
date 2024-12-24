@@ -101,6 +101,18 @@ const TextSlider = () => {
                 <span>Opportunities don&apos;t happen, you create them.</span>
                 <span>Opportunities don&apos;t happen, you create them.</span>
               </div>
+              <div className="slidingTextRow">
+                <span>You miss all of the shots you don&apos;t take.</span>
+                <span>You miss all of the shots you don&apos;t take.</span>
+                <span>You miss all of the shots you don&apos;t take.</span>
+                <span>You miss all of the shots you don&apos;t take.</span>
+              </div>
+              <div className="slidingTextRow">
+                <span>Opportunities don&apos;t happen, you create them.</span>
+                <span>Opportunities don&apos;t happen, you create them.</span>
+                <span>Opportunities don&apos;t happen, you create them.</span>
+                <span>Opportunities don&apos;t happen, you create them.</span>
+              </div>
             </div>
 
         )
