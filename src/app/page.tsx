@@ -20,7 +20,7 @@ export default function Home() {
             <Image src="/icons/placeholder.jpg" alt="image" width={794} height={418} ></Image>
             <div className="imageTextContainer">
             <h1>BRIAN BATARA YAPUTRA</h1>
-            <h2>Hello, I'm Brian. I'm currently a student, with many interests related to the development of technology.</h2>
+            <h2>Hello, I&apos;m Brian. I&apos;m currently a student, with many interests related to the development of technology.</h2>
           {/* <h2>I am currently a student. I love all aspects of tinkering, but have a special affinity to coding, web design, and electronics.</h2> */}
             </div>
           </div>
@@ -38,8 +38,8 @@ export default function Home() {
 
           <div className="row-Informatica">
             <div className="row-textContainer">
-              <h1>Languages I've learned</h1>
-              <h2>I have a strong foundation in CSS, HTML, and JavaScript. I have worked with frameworks like ReactJS, NextJS and occasionally threeJS. Here are some other languages I've learned:</h2>
+              <h1>Languages I&apos;ve learned</h1>
+              <h2>I have a strong foundation in CSS, HTML, and JavaScript. I have worked with frameworks like ReactJS, NextJS and occasionally threeJS. Here are some other languages I&apos;ve learned:</h2>
             </div>
             <div className="icon-marquee-container">
               <div className="marquee">
@@ -65,7 +65,7 @@ export default function Home() {
             </div>
 
             <div className="row-textContainer">
-              <h2>I know it's a bit typical, but technology has been my passion for many years. I started out learning Scratch as a young boy. I delved into electronics at a later age via keyboards.</h2>
+              <h2>I know it&apos;s a bit typical, but technology has been my passion for many years. I started out learning Scratch as a young boy. I delved into electronics at a later age via keyboards.</h2>
             </div>       
           </div>
 
