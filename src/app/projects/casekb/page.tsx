@@ -1,12 +1,12 @@
 export default function CaseKB() {
     return (
         <div className="pageContainer">
-            <div className="grid-container">
+            <div className="grid-container contentPage">
                 <div className="grid-header">
+                    <h2>/<a className="readmoreClick1" href="/projects/">projects</a>/<a className="readmoreClick1" href="/projects/casekb/">casekb</a>/</h2>
                     <div className="proprietary-container header">
                         <h3>Keyboard cases</h3>
                     </div>
-                    <h2>/<a className="readmoreClick1" href="/projects/">projects</a>/<a className="readmoreClick1" href="/projects/casekb/">casekb</a>/</h2>
                 </div>
                 
                 <div className="articleBody">
@@ -26,6 +26,7 @@ export default function CaseKB() {
                     <h2>My renders:</h2>
                     <img src="/imgassets/m0110front.png" className="imageUneven"></img>
                     <h3>Isometric front view of the M0110 case.</h3>
+                    <br></br>
                     <img src="/imgassets/m0110back.png" className="imageUneven"></img>
                     <h3>Rear view of the M0110 case.</h3>
                     <br></br>

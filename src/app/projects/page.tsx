@@ -1,4 +1,6 @@
 "use client";
+
+import HideShow from "../funcs/hideShow";
 export default function Projects() {
 
     // const expandContent1 = () => {
@@ -37,17 +39,18 @@ export default function Projects() {
                         <h3>Projects</h3>
                     </div>
                     <div className="projectNavbar">
-                        <div className="projectNavbar selector">All</div>
-                        <div className="projectNavbar selector">Coding</div>
-                        <div className="projectNavbar selector">3D Modelling</div>
-                        <div className="projectNavbar selector">Electronics</div>
+                        <div className="projectNavbar selector"><button id="allButton">All</button></div>
+                        <div className="projectNavbar selector"><button id="codingButton">Coding</button></div>
+                        <div className="projectNavbar selector"><button id="3dButton">3D Modelling</button></div>
+                        <div className="projectNavbar selector"><button id="miscButton">Miscellaneous</button></div>
                     </div>
                 </div>
-                <div className="proprietary-container smallDescription">
+                <HideShow />
+                <div className="proprietary-container smallDescription" id="misc">
                     <h1>RESEARCH PAPER</h1>
                     <h2>This was a final year project for my highschool. I created a research paper pertaining to analyzing five popular image file formats. <a href="/projects/researchpaper" className="readmoreClick1">Read more</a></h2>
                 </div>
-                    <div className="proprietary-container smallDescription">
+                    <div className="proprietary-container smallDescription" id="coding">
                         <h1>ORDERING SYSTEM WITH REAL-TIME PAYMENT INTEGRATION</h1>
                         <h2>For an inter-school competition, I created an ordering system that utilizes QRIS, Indonesia&apos;s nationally standardized QR code that allows for contactless payments. <a href="/projects/orderingsystem" className="readmoreClick1">Read more</a></h2>
                         <div className="expandContent1">
@@ -78,21 +81,21 @@ export default function Projects() {
                             {/* <a href="#" className="readmoreClick1" onClick={reverseExpand1}><h2>See less</h2></a> */}
                         </div>
                 </div>
-                <div className="proprietary-container smallDescription">
+                <div className="proprietary-container smallDescription" id="coding1">
                     <h1>PASSWORD ENCRYPTION USING IMAGING</h1>
                     <h2>As a project/project submission for my final year of school, I and a friend created a way to encrypt passwords using images.</h2>
                     <h2>The program took the password and image chosen by the user, and used the image&apos;s data to encrypt the password.</h2>
                     <h2>With this, our group ended up placing third in the competition. <a href="/projects/passencryption" className="readmoreClick1">Read more</a></h2>
                 </div>
-                <div className="proprietary-container smallDescription">
+                {/* <div className="proprietary-container smallDescription" id="coding2">
                     <h1>TOURISM WEBSITE FOR INTERNSHIP</h1>
                     <h2></h2>
-                </div>
-                <div className="proprietary-container smallDescription">
+                </div> */}
+                <div className="proprietary-container smallDescription" id="3d">
                     <h1>MODELLING CASES FOR KEYBOARDS</h1>
                     <h2>Some modelling work I did while learning Fusion for some keyboards. <a href="/projects/casekb" className="readmoreClick1">Read more</a></h2>
                 </div>
-        </div>
+            </div>
         </div>
     );
 }

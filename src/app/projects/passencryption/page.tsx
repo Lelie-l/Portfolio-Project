@@ -1,16 +1,16 @@
 export default function PassEncryption() {
     return (
         <div className="pageContainer">
-            <div className="grid-container">
+            <div className="grid-container contentPage">
                 <div className="grid-header">
+                     <h2>/<a className="readmoreClick1" href="/projects/">projects</a>/<a className="readmoreClick1" href="/projects/passencryption/">passencryption</a>/</h2>
                     <div className="proprietary-container header">
                         <h3>image password encryption</h3>
                     </div>
-                    <h2>/<a className="readmoreClick1" href="/projects/">projects</a>/<a className="readmoreClick1" href="/projects/passencryption/">passencryption</a>/</h2>
                 </div>
 
                 <div className="articleBody">
-                    <h2>A school science festival (STEAM) is hosted every year at my school. Being a senior, a requirement for graduation was to create a project related to my chosen electives for this festival, where a winner would be determined based on the finished product. I was paired up with a friend with similar interests as mine. We decided to create a password encryption system using images as a method of encryption. This was a very basic project and a bit poorly written, but helped my group achieve <span className="red-text">third place</span>.</h2>
+                    <h2>A school science festival (STEAM) is hosted every year at my former high-school. Being a senior, a requirement for graduation was to create a project related to my chosen electives for this festival, where a winner would be determined based on the finished product. I was paired up with a friend with similar interests as mine. We decided to create a password encryption system using images as a method of encryption. This was a very basic project and a bit poorly written, but helped my group achieve <span className="red-text">third place</span>.</h2>
                     <br></br>
 
                     <h1><b>Languages used:</b></h1>

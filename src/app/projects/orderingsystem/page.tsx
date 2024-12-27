@@ -4,12 +4,12 @@ export default function OrderingSystem() {
 
     return (
         <div className="pageContainer">
-            <div className="grid-container">
+            <div className="grid-container contentPage">
             <div className="grid-header">
+                <h2>/<a className="readmoreClick1" href="/projects/">projects</a>/<a className="readmoreClick1" href="/projects/orderingsystem/">orderingsystem</a>/</h2>
                 <div className="proprietary-container header">
                     <h3>ORDERING SYSTEM WITH REAL-TIME PAYMENT INTEGRATION</h3>
                 </div>
-                <h2>/<a className="readmoreClick1" href="/projects/">projects</a>/<a className="readmoreClick1" href="/projects/orderingsystem/">orderingsystem</a>/</h2>
             </div>
 
                 <div className="articleBody">

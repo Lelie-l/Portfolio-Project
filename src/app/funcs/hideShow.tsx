@@ -1,98 +1,143 @@
-'use client'; 
+'use client';
 
 import { useEffect } from "react";
-import "../globals.css"; 
+import "../globals.css";
 
 const HideShow = () => {
     useEffect(() => {
-        // buttons
+        // Get buttons
         const allButton = document.getElementById("allButton");
-        const aboutButton = document.getElementById("aboutButton");
-        const projectsButton = document.getElementById("projectsButton");
-        const workButton = document.getElementById('workButton');
-        const hobbyButton = document.getElementById('hobbyButton')
+        const codingButton = document.getElementById("codingButton");
+        const threedButton = document.getElementById("3dButton");
+        const miscButton = document.getElementById("miscButton");
 
-        // elements to be hidden or shown
-        const aboutItems = document.getElementById("aboutMe");
-        const projectItems = document.getElementById("projects")
-        const workItems = document.getElementById("work")
-        const hobbyItems = document.getElementById("hobby")
+        // Get elements to hide/show by ID
+        const misc = document.getElementById("misc");
+        const coding = document.getElementById("coding");
+        const coding1 = document.getElementById("coding1");
+        // const coding2 = document.getElementById("coding2");
+        const threed = document.getElementById("3d");
+
+        // If all elements exist
+        // function handleAllClick() {
+        //     if (misc && coding && coding1 && coding2 && threed) {
+        //         misc.style.display = "none";
+        //         coding.style.display = "none";
+        //         coding1.style.display = "none";
+        //         coding2.style.display = "none";
+        //         threed.style.display = "none";
+
+        //         setTimeout(() => {
+        //             misc.style.display = "block";
+        //             coding.style.display = "block";
+        //             coding1.style.display = "block";
+        //             coding2.style.display = "block";
+        //             threed.style.display = "block";
+        //         }, 100)
+        //     }
+        // }
+    
+        // function handleCodingClick() {
+        //     if (misc && coding && coding1 && coding2 && threed) {
+        //         misc.style.display = "none";
+        //         coding.style.display = "none";
+        //         coding1.style.display = "none";
+        //         coding2.style.display = "none";
+        //         threed.style.display = "none";
+                
+        //         setTimeout(() => {
+        //             coding.style.display = "block";
+        //             coding1.style.display = "block";
+        //             coding2.style.display = "block";
+        //         }, 100)
+        //     }
+        // }
+    
+        // function handle3DClick() {
+        //     if (misc && coding && coding1 && coding2 && threed) {
+        //         misc.style.display = "none";
+        //         coding.style.display = "none";
+        //         coding1.style.display = "none";
+        //         coding2.style.display = "none";
+        //         threed.style.display = "block";
+        //     }
+        // }
+    
+        // function handleMiscClick() {
+        //     if (misc && coding && coding1 && coding2 && threed) {
+        //         misc.style.display = "block";
+        //         coding.style.display = "none";
+        //         coding1.style.display = "none";
+        //         coding2.style.display = "none";
+        //         threed.style.display = "none";
+        //     }   
+        // }
 
         function handleAllClick() {
-            if (aboutItems && projectItems && workItems && hobbyItems) {
-                aboutItems.classList.remove("hidden");
-                projectItems.classList.remove("hidden");
-                workItems.classList.remove("hidden");
-                hobbyItems.classList.remove("hidden");
-                aboutItems.classList.add("visible");
-                projectItems.classList.add("visible");
-                workItems.classList.add("visible");
-                hobbyItems.classList.add("visible");
+            if (misc && coding && coding1 && threed) {
+                misc.style.display = "none";
+                coding.style.display = "none";
+                coding1.style.display = "none";
+                threed.style.display = "none";
+        
+                setTimeout(() => {
+                    misc.style.display = "block";
+                    coding.style.display = "block";
+                    coding1.style.display = "block";
+                    threed.style.display = "block";
+                }, 100);
             }
         }
-
-        function handleAboutClick() {
-            if (aboutItems && projectItems && workItems && hobbyItems) {
-                aboutItems.classList.remove("hidden");
-                projectItems.classList.add("hidden");
-                workItems.classList.add("hidden");
-                hobbyItems.classList.add("hidden");
-                aboutItems.classList.add("visible");
-                projectItems.classList.remove("visible");
-                workItems.classList.remove("visible");
-                hobbyItems.classList.remove("visible");
+        
+        function handleCodingClick() {
+            if (misc && coding && coding1 && threed) {
+                misc.style.display = "none";
+                coding.style.display = "none";
+                coding1.style.display = "none";
+                threed.style.display = "none";
+                
+                setTimeout(() => {
+                    coding.style.display = "block";
+                    coding1.style.display = "block";
+                }, 100);
             }
         }
-
-        function handleProjectClick() {
-            if (aboutItems && projectItems && workItems && hobbyItems) {
-                aboutItems.classList.add("hidden");
-                projectItems.classList.remove("hidden");
-                workItems.classList.add("hidden");
-                hobbyItems.classList.add("hidden")
-                aboutItems.classList.remove("visible");
-                projectItems.classList.add("visible");
-                workItems.classList.remove("visible");
-                hobbyItems.classList.remove("visible");
+        
+        function handle3DClick() {
+            if (misc && coding && coding1 && threed) {
+                misc.style.display = "none";
+                coding.style.display = "none";
+                coding1.style.display = "none";
+                threed.style.display = "block";
             }
         }
-
-        function handleWorkClick() {
-            if (aboutItems && projectItems && workItems && hobbyItems) {
-                aboutItems.classList.add("hidden");
-                projectItems.classList.add("hidden");
-                workItems.classList.remove("hidden");
-                hobbyItems.classList.add("hidden");
-                aboutItems.classList.remove("visible");
-                projectItems.classList.remove("visible");
-                workItems.classList.add("visible");
-                hobbyItems.classList.remove("visible");
-            }
+        
+        function handleMiscClick() {
+            if (misc && coding && coding1 && threed) {
+                misc.style.display = "block";
+                coding.style.display = "none";
+                coding1.style.display = "none";
+                threed.style.display = "none";
+            }   
         }
-
-        function handleHobbyClick() {
-            if (aboutItems && projectItems && workItems && hobbyItems) {
-                aboutItems.classList.add("hidden");
-                projectItems.classList.add("hidden");
-                workItems.classList.add("hidden");
-                hobbyItems.classList.remove("hidden");
-                aboutItems.classList.remove("visible");
-                projectItems.classList.remove("visible");
-                workItems.classList.remove("visible");
-                hobbyItems.classList.add("visible");
-            }
-        }
-
-        allButton?.addEventListener('click', handleAllClick)
-        aboutButton?.addEventListener('click', handleAboutClick);
-        projectsButton?.addEventListener('click', handleProjectClick);
-        workButton?.addEventListener('click', handleWorkClick)
-        hobbyButton?.addEventListener('click', handleHobbyClick)
         
 
-    }, [])
+            // Add event listeners for buttons
+            allButton?.addEventListener("click", handleAllClick);
+            codingButton?.addEventListener("click", handleCodingClick);
+            threedButton?.addEventListener("click", handle3DClick);
+            miscButton?.addEventListener("click", handleMiscClick);
+
+            // Cleanup event listeners when component is unmounted
+        //     return () => {
+        //         allButton?.removeEventListener("click", handleAllClick);
+        //         codingButton?.removeEventListener("click", handleCodingClick);
+        //         threedButton?.removeEventListener("click", handle3DClick);
+        //         miscButton?.removeEventListener("click", handleMiscClick);
+        // }
+    }, []);
 
     return null;
-}
+};
 
 export default HideShow;
